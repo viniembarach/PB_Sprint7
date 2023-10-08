@@ -1940,7 +1940,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"nome\": \"{{$randomProduct}}\",\r\n  \"preco\": \"30\",\r\n  \"descricao\": \"{{$randomLoremText}}\",\r\n  \"quantidade\": 20\r\n}",
+							"raw": "{\r\n  \"nome\": \"{{$randomProduct}}\",\r\n  \"preco\": \"30\",\r\n  \"descricao\": \"{{$randomLoremText}}\",\r\n  \"quantidade\": \"20\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2724,7 +2724,7 @@
 					"response": []
 				},
 				{
-					"name": "EditarProdutoVazio",
+					"name": "EditarProdutoInvalido",
 					"event": [
 						{
 							"listen": "test",
@@ -2796,13 +2796,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}/produtos/aaaa",
+							"raw": "{{host}}/produtos/invalido",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"produtos",
-								"aaaa"
+								"invalido"
 							]
 						}
 					},
